@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html lang="es">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <title>Demo Login</title>
+        <meta name="description" content=""/>
+        <meta name="viewport" content="width=device-width"/>
+        <base href="/"/>
+        <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css"/>
+        <script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
+        <script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+        
+        <script type="text/javascript" src="/js/reporte.js"></script>
+        
+    </head>
+    <body>
+        <div class="container">
+            <h1>Reporte de Reservas</h1>
+            Inicio <input type="date" id="fechaInicial">
+            Final <input type="date" id="fechaFinal">
+            <button onclick="consultarComprasxFecha()">Consultar Reservas por Fecha</button>
+            
+            <br/><br/>
+            <button onclick="consultarComprasxTipo()">Consultar por Tipos de Cliente</button>
+            <br/>
+            <div id="tabla"></div>
+            
+            <br/><br/><br/> <a href="index.html">Volver al inicio</a>
+        </div>
+    </body>
+</html>
